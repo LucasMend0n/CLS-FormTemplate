@@ -17,6 +17,6 @@ export class CadastroComponent implements OnInit {
 
   cadastrar(form : NgForm ){
      form.valid ? this.router.navigate(['./sucesso']) : alert('Formulario inválido');
-      console.log(form);
+      console.log(form.controls);
   }
 }
